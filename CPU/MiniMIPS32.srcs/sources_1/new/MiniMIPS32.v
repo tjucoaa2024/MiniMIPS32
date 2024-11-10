@@ -60,8 +60,11 @@ module MiniMIPS32 (
   wire                   exe_mreg_i;
   wire [       `REG_BUS] exe_din_i;
   wire                   exe_whilo_i;
-  wire [       `REG_BUS] exe_hi_i;
-  wire [       `REG_BUS] exe_lo_i;
+  wire [       `REG_BUS] exe_whi_i;
+  wire [       `REG_BUS] exe_wlo_i;
+
+  wire [       `REG_BUS] hi_i;
+  wire [       `REG_BUS] lo_i;
 
   wire [     `ALUOP_BUS] exe_aluop_o;
   wire [  `REG_ADDR_BUS] exe_wa_o;
@@ -150,7 +153,6 @@ module MiniMIPS32 (
 
   // 接口完整
   id_stage id_stage0 (
-      .cpu_rst_n   (cpu_rst_n),
       .id_pc_i     (id_pc_i),
       .id_inst_i   (inst),
       .rd1         (rd1),
@@ -220,8 +222,10 @@ module MiniMIPS32 (
       .exe_mreg_i     (exe_mreg_i),
       .exe_din_i      (exe_din_i),
       .exe_whilo_i    (exe_whilo_i),
-      .exe_hi_i       (exe_hi_i),
-      .exe_lo_i       (exe_lo_i),
+      .exe_whi_i      (exe_whi_i),
+      .exe_wlo_i      (exe_wlo_i),
+      .hi_i           (hi_i),
+      .lo_i           (lo_i),
       .exe_debug_wb_pc(exe_debug_wb_pc_i),
 
       .exe_aluop_o(exe_aluop_o),
@@ -304,7 +308,7 @@ module MiniMIPS32 (
       .cpu_rst_n  (cpu_rst_n),
 
       .mem_whilo      (mem_whilo_o),
-      .mem_hilp       (mem_hilo_o),
+      .mem_hilo       (mem_hilo_o),
       .mem_wa         (mem_wa_o),
       .mem_wreg       (mem_wreg_o),
       .mem_dreg       (mem_dreg_o),
@@ -363,8 +367,8 @@ module MiniMIPS32 (
       .we_lo      (wb_wlo_o),
       .hi_i       (wb_hilo_o[63:32]),
       .lo_i       (wb_hilo_o[31:0]),
-      .hi_o       (exe_hi_i),
-      .lo_o       (exe_lo_i)
+      .hi_o       (hi_i),
+      .lo_o       (lo_i)
   );
 
 endmodule

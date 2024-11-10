@@ -1,7 +1,6 @@
 `include "defines.v"
 
 module id_stage (
-
     // 从取指阶段获得的PC值
     input wire [`INST_ADDR_BUS] id_pc_i,
     input wire [`INST_ADDR_BUS] id_debug_wb_pc, // 供调试使用的PC值，上板测试时务必删除该信号
