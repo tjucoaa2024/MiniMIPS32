@@ -10,6 +10,11 @@ module MiniMIPS32_SYS(
     wire [`INST_ADDR_BUS] iaddr;
     wire                  ice;
     wire [`INST_BUS     ] inst;
+    wire                  dce;
+    wire [`INST_ADDR_BUS] daddr;
+    wire [`BSEL_BUS      ] we;
+    wire [`INST_BUS     ] din;
+    wire [`INST_BUS     ] dout;
     
     wire [`INST_ADDR_BUS]  debug_wb_pc;       // 供调试使用的PC值，上板测试时务必删除该信号
     wire                   debug_wb_rf_wen;   // 供调试使用的PC值，上板测试时务必删除该信号
@@ -30,6 +35,15 @@ module MiniMIPS32_SYS(
       .ena(ice),      // input wire ena
       .addra(iaddr[12:2]),  // input wire [10 : 0] addra
       .douta(inst)  // output wire [31 : 0] douta
+    );
+    
+    data_ram data_ram0 (
+      .clka(cpu_clk_50M),
+      .ena(dce),
+      .wea(we),
+      .addra(daddr[12:2]),
+      .dina(din),
+      .douta(dout)
     );
 
     MiniMIPS32 minimips32 (
