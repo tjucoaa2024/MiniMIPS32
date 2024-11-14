@@ -37,14 +37,6 @@ module MiniMIPS32_SYS(
       .douta(inst)  // output wire [31 : 0] douta
     );
     
-    data_ram data_ram0 (
-      .clka(cpu_clk_50M),
-      .ena(dce),
-      .wea(we),
-      .addra(daddr[12:2]),
-      .dina(din),
-      .douta(dout)
-    );
 
     MiniMIPS32 minimips32 (
         .cpu_clk_50M(cpu_clk_50M),
