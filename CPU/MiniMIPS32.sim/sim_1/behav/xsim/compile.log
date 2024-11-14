@@ -6,8 +6,8 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/s
 INFO: [VRFC 10-311] analyzing module clkdiv
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MiniMIPS32
-INFO: [VRFC 10-2458] undeclared symbol mem_din_o, assumed default net type wire [E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:329]
-INFO: [VRFC 10-2458] undeclared symbol wb_din_i, assumed default net type wire [E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:341]
+INFO: [VRFC 10-2458] undeclared symbol mem_din_o, assumed default net type wire [E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:352]
+INFO: [VRFC 10-2458] undeclared symbol wb_din_i, assumed default net type wire [E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32.v:364]
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/MiniMIPS32_SYS.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/exe_stage.v" into library xil_defaultlib
@@ -22,8 +22,6 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/s
 INFO: [VRFC 10-311] analyzing module if_stage
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/ifid_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module ifid_reg
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/mem_stage.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module mem_stage
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/memwb_reg.v" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module memwb_reg
 INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/regfile.v" into library xil_defaultlib
@@ -32,7 +30,3 @@ INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/s
 INFO: [VRFC 10-311] analyzing module wb_stage
 INFO: [VRFC 10-2263] Analyzing SystemVerilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/new/hilo0.sv" into library xil_defaultlib
 INFO: [VRFC 10-311] analyzing module hilohilo
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sim_1/new/MiniMIPS32_SYS_tb.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module MiniMIPS32_SYS_tb
-INFO: [VRFC 10-2263] Analyzing Verilog file "E:/MiniMIPS32/CPU/MiniMIPS32.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module glbl
