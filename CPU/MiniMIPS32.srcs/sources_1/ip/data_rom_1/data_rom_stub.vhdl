@@ -1,10 +1,10 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Sun Nov 17 15:39:04 2024
+-- Date        : Sun Nov 17 20:50:01 2024
 -- Host        : LAPTOP-5Q1GD5EK running 64-bit major release  (build 9200)
 -- Command     : write_vhdl -force -mode synth_stub
---               e:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/ip/data_rom_1/data_rom_stub.vhdl
+--               E:/MiniMIPS32/CPU/MiniMIPS32.srcs/sources_1/ip/data_rom_1/data_rom_stub.vhdl
 -- Design      : data_rom
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7k325tffg900-2
